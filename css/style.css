@@ -1,0 +1,253 @@
+/*====================================
+defualt style
+ =====================================*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*====================================
+root 
+ =====================================*/
+:root {
+    --primary:#1a1a4c;
+    --secondary: #101032;
+    --p1:#ec1650;
+    --p2:#fcce32;
+    --board:#664aba;
+    --control:#0099cb;
+}
+
+/*====================================
+heading  and body style
+ =====================================*/
+.heading{
+   font-size: 70px;
+   background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+   -webkit-background-clip: text;
+   -moz-background-clip: text;
+   -o-background-clip: text;
+   background-clip: text;
+   color: transparent;
+   animation: rainbow 2s linear infinite;
+
+}
+
+.header {
+    font-family: 'Bebas Neue', sans-serif;
+    padding: 20px 0 20px 0;
+}
+
+body {
+    background: var(--primary) !important;
+}
+/*====================================
+player 1 style
+ =====================================*/
+
+.playerMarker{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.marking1{
+    background: var(--secondary);
+    height: 80px;
+    width: 80px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.player1 {
+    font-size: 12px;
+    padding-top: 5px;
+    margin-bottom: 5px;
+}
+
+.marker1{
+    color: var(--p1);
+    font-weight: 900;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+/*====================================
+player 2 style
+ =====================================*/
+
+.marking2{
+    background: var(--secondary);
+    height: 80px;
+    width: 80px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.player2 {
+    font-size: 12px;
+    padding-top: 5px;
+    margin-bottom: 5px;
+}
+
+.marker2{
+    color: var(--p2);
+    font-weight: 900;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+/*====================================
+grid
+ =====================================*/
+
+ .board-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ 
+ }
+
+ .board {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    grid-gap: 10px;
+    background: #664aba;
+    border-radius: 10px;
+    padding: 20px;
+    
+}
+
+.box {
+    display: flex;
+    background: var(--secondary);
+    height: 80px;
+    width: 80px;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    font-size: 30px;
+    cursor:pointer;
+  }
+
+  /*====================================
+controls
+ =====================================*/
+
+ .btns{
+    margin-left: 20px;
+
+ }
+
+ .btns > button {
+    background: var(--control);
+    width: 250px;
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+ }
+
+ .btns > button:hover{
+    background: crimson;
+ }
+
+/*====================================
+media frames
+ =====================================*/
+
+
+ /*====================================
+animation
+ =====================================*/
+
+ @keyframes rainbow {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+
+  /*====================================
+preloader
+ =====================================*/
+
+ .loader {
+    background: var(--primary);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+ }
+
+ /*====================================
+info box
+ =====================================*/
+ .info {
+    background: var(--primary);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+ }
+ 
+.info-box {
+    background: var(--secondary);
+   
+}
+
+input[type='text'] {
+    background: var(--secondary);
+    border: none;
+    color: white;
+    font-size: 30px;
+    width: 250px;
+    height: 30px;
+    outline: none;
+    caret-color: var(--control) ;
+}
+
+.player-one {
+    color: var(--p1);
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 5px;
+    font-weight: bolder;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.player-two {
+    color: var(--p2);
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 5px;
+    font-weight: bolder;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+button[type='submit'] {
+    background: var(--control);
+    width: 350px;
+    height: 40px;
+    font-weight: bolder;
+}
+
+button[type='submit']:hover {
+  background: crimson;
+}

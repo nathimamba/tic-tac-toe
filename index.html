@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="icon" href="./images/game.png" type="image/icon type">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div class="loader">
+        <div class="spinner-grow text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div class="spinner-grow text-secondary" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div class="spinner-grow text-success" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div class="spinner-grow text-danger" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div class="spinner-grow text-warning" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div class="spinner-grow text-info" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div class="spinner-grow text-light" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div class="spinner-grow text-dark" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+    </div>
+
+    <div class="container-fluid info justify-content-center text-light">
+        <div class="row justify-content-center">
+            <h2 class="text-light">Enter Player Names</h2>
+        </div>
+        <div class="row text-center">
+            <form action="#" class="form">
+                <div class="info-box">
+                    <label for="Player-One" class="player-one">X</label>
+                    <input type="text" placeholder="Player One" name="Player-One" class="player1s" minlength="2">
+                  </div>
+                  <div class="info-box my-4">
+                    <label for="Player-Two" class="player-two">O</label>
+                    <input type="text" placeholder="Player Two" name="Player-Two" class='player2s' minlength="2">
+                  </div>
+                  <div class="text-center">
+                    <button type="submit" class="btn text-light start-game">START GAME</button>
+                  </div>
+            </form>
+        </div>
+      </div>
+
+<main>
+    <div class="container-fluid header">
+        <div class="row text-center">
+            <div class="col">
+                <p class="heading">Tic-Tac-Toe</p>
+            </div>   
+        </div>
+
+        
+        <div class="row text-light">
+            <div class="playerMarker">
+                <div class="marking1">
+                    <p class="player1">Player 1</p>
+                    <p class="marker1">X</p>
+                </div>
+                <div class="marking2">
+                    <p class="player2">Player 2</p>
+                    <p class="marker2">O</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-light">
+        <div class="row">
+            <div class="board-container">
+                <div class="board">
+                    <div class="box" data-index="0"></div>
+                    <div class="box" data-index="0"></div>
+                    <div class="box" data-index="0"></div>
+                    <div class="box" data-index="0"></div>
+                    <div class="box" data-index="0"></div>
+                    <div class="box" data-index="0"></div>
+                    <div class="box" data-index="0"></div>
+                    <div class="box" data-index="0"></div>
+                    <div class="box" data-index="0"></div>
+                </div>
+            </div>
+            <div class="row  my-3 text-center">
+                <div class="col btns">
+                    <button class="btn  my-2 newGame">New Game</button>
+                    <button class="btn  my-2 restart">Restart</button>
+                </div>
+                    
+            </div>
+        </div>
+        
+    </div>
+</main>
+    
+
+
+<script src="./js/App.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
